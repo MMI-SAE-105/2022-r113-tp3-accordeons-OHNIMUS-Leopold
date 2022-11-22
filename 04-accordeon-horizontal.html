@@ -13,7 +13,7 @@
     <ul id="accordeon" x-data="{isOpen: 1,}" >  
       <li :class="{actif:isOpen === 1}">
         <figure>
-          <img src="" alt="" width="102">
+          <img src="https://picsum.photos/102?random=1" alt="" width="102">
           <figcaption>
             <h3>Lorem, ipsum dolor.</h3>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -22,7 +22,7 @@
       </li>
       <li :class="{actif:isOpen === 2}">
         <figure>
-          <img src="" alt="" width="102">
+          <img src="https://picsum.photos/102?random=2" alt="" width="102">
           <figcaption>
             <h3>Cum, non unde!</h3>
             <p>Quibusdam, alias fugit? Fuga, ad odit.</p>
@@ -31,7 +31,7 @@
       </li>
       <li :class="{actif:isOpen === 3}">
         <figure>
-          <img src="" alt="" width="102">
+          <img src="https://picsum.photos/102?random=3" alt="" width="102">
           <figcaption>
             <h3>Iure, dicta et!</h3>
             <p>Reprehenderit corporis provident molestias neque nemo!</p>
@@ -44,7 +44,7 @@
 
 <style>
 #accordeon {
-     margin: auto;/* pour que les éléments soient alignés horizontalement */
+     display: flex;/* pour que les éléments soient alignés horizontalement */
      margin: 0;/* pour éviter les marges par défaut */
      padding: 0;/* pour éviter les "padding" par défaut */
 }
@@ -66,7 +66,7 @@
 
 #accordeon li figure {
      margin: 0;/* pour éviter les marges par défaut */
-     margin: auto;/* pour que les éléments soient alignés horizontalement */
+     display: flex;/* pour que les éléments soient alignés horizontalement */
      width: 317px;/* largeur de l'élément intrérieur de 317px (= déplié) */
 }
 
