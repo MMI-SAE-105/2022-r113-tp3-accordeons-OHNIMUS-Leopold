@@ -8,9 +8,9 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Onglets</title>
   </head>
-  <body>
+  <body x-data="{isOpen : 1,}">
     <h1>Onglets</h1>
-    <div id="onglets" x-data="{isOpen : 1,}">
+    <div id="onglets">
       <ul role="tablist">
         <li :class="{actif:isOpen === 1}" role="tab" @click="isOpen = 1">Onglet 1</li>
         <li :class="{actif:isOpen === 2}" role="tab" @click="isOpen = 2">Onglet 2</li>
@@ -49,6 +49,10 @@
   .enfant {
     position: absolute;
     ;
+  }
+
+  .panneau_actif {
+
   }
 
 </style>
